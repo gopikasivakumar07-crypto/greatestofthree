@@ -13,14 +13,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building Greatest of Three Numbers application...'
-                bat '"C:\Users\GOPIKA SIVAKUMAR\AppData\Local\Python\bin\python.exe" -m py_compile greatest.py'
+                bat '"C:\\Users\\GOPIKA SIVAKUMAR\\AppData\\Local\\Python\\bin\\python.exe" -m py_compile greatest.py'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                bat '"C:\Users\GOPIKA SIVAKUMAR\AppData\Local\Python\bin\python.exe" -m pytest test_greatest.py'
+                bat '"C:\\Users\\GOPIKA SIVAKUMAR\\AppData\\Local\\Python\\bin\\python.exe" -m pytest test_greatest.py'
             }
         }
     }
